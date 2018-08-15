@@ -22,7 +22,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Collections
 collections:
-  docs:
+  bcard:
+    output: true
+  cv:
+    output: true
+  doc:
     output: true
 
 # Build settings

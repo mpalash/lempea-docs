@@ -2,8 +2,29 @@
 layout: default
 ---
 
+<h2>Docs</h2>
 <ul>
-  {% for page in site.pages reversed %}
-  <h2>{{ page.title }}</h2>
+  {% for page in site.doc reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>CVs</h2>
+<ul>
+  {% for page in site.cv reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<h2>Business Cards</h2>
+<ul>
+  {% for page in site.bcard reversed %}
+  <li>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+  </li>
   {% endfor %}
 </ul>
