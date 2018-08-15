@@ -5,25 +5,6 @@
 This is the basic Jekyll starter site, with Netlify CMS integrated and using Netlify Identity for
 authentication.
 
-## Getting started
-
-Use our deploy button to get your own copy of the repository:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/jekyll-netlify-cms&stack=cms)
-
-This will setup everything needed for running the CMS:
-
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Netlify CMS
-
-The email address associated with your Netlify account will receive an email inviting you as an
-Identity user - click Accept in the email to set your new password, then navigate to `/admin` on
-your site to log in.
-
-Now you're all set, and you can start editing content!
-
 **Note:** if you switch the repo that was created to private, you'll need to regenerate your token,
 as the token generated using the deploy to Netlify button can only access public repositories. To
 regenerate your token, head to "Settings" in your Netlify site dashboard, go to the "Identity"
@@ -47,7 +28,7 @@ Now navigate to [localhost:4000](http://localhost:4000/) to preview the site, an
 Netlify provides basic OAuth so you can log in to Netlify CMS with your GitHub profile directly if
 you prefer not to use Netlify Identity. To do so, go to [the GitHub developer application
 screen](https://github.com/settings/developers) and **register new application**. The Authorization
-callback URL you'll need to enter is `https://api.netlify.com/auth/done`. 
+callback URL you'll need to enter is `https://api.netlify.com/auth/done`.
 
 Once you've set up the application, go back to your Netlify site dashboard, navigate to the
 **Access** tab. Then fill in your new Client ID and Client Secret in the Github Authentication

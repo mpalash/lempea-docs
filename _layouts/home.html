@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<ul>
+  {% for page in site.pages reversed %}
+  <h2>{{ page.title }}</h2>
+  {% endfor %}
+</ul>
