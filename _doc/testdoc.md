@@ -1,7 +1,7 @@
 ---
 layout: doc
-collection: doc
-title:  'Test Doc'
+title: Test Doc
 ---
-
 This is a Doc
+
+You can edit this.
