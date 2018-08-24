@@ -19,13 +19,17 @@
   font-family: $font-rc;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 0.9;
+  line-height: $s-xl;
   text-decoration: none;
   color: $color-ink;
 
-  width: $s-xxxl;
-  padding: 1.25*$s-xxl $s-s $s-s $s-s;
+  width: 2.25*$s-xxxl;
+  height: $s-xxl;
+  padding: $s-s $s-s $s-s 1.25*$s-xxl;
   background: transparent url(/assets/logo/logo-circle-gradient.svg) no-repeat 8px 8px / 48px 48px;
+
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-2.25*$s-xxxl);
 }
 .page-content {
   min-height: 100vh;
