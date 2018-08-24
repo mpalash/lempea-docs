@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h2 class="collection-name">Docs</h2>
-<ul>
+<ul class="collection-list">
   {% for page in site.doc reversed %}
   <li class="item-doc">
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
@@ -12,7 +12,7 @@ layout: default
 </ul>
 
 <h2 class="collection-name">CVs</h2>
-<ul>
+<ul class="collection-list">
   {% for page in site.cv reversed %}
   <li class="item-cv">
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
@@ -21,10 +21,10 @@ layout: default
 </ul>
 
 <h2 class="collection-name">Business Cards</h2>
-<ul>
+<ul class="collection-list">
   {% for page in site.bcard reversed %}
   <li class="item-bcard">
-    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}.{{page.surname}}</a>
   </li>
   {% endfor %}
 </ul>

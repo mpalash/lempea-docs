@@ -11,7 +11,7 @@ $color-grey-light:   #d7d7d7;
 $color-white:        #FFFFFF;
 
 // GRADIENTS
-$gradient: linear-gradient(left bottom, #c1272d 20%,#ef492e 80%);
+$gradient: linear-gradient(45deg, #c1272d 20%,#ef492e 80%);
 
 // TYPOGRAPHY
 $text-font-family: "Work Sans", sans-serif;
@@ -45,3 +45,25 @@ $s-b:   16px;
 $s-s:   8px;
 $s-xs:  4px;
 $s-xxs: 2px;
+
+// PRINT SPACING
+// Use these variables for padding & margin
+$p-xxxl:12.8mm;
+$p-xxl: 6.4mm;
+$p-xl:  4.8mm;
+$p-l:   3.2mm;
+$p-m:   2.4mm;
+$p-b:   1.6mm;
+$p-s:   0.8mm;
+$p-xs:  0.4mm;
+$p-xxs: 0.2mm;
+
+// MIXINS
+$box-shadow-doc: 0 5px 40px rgba(black, 0.2);
+
+@mixin rc-small-caps {
+  font-family: $font-rc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

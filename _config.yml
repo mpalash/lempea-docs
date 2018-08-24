@@ -25,6 +25,7 @@ company:
   address: "c/o Spaces, Mannerheiminaukio 1 A, 00100 Helsinki, Finland"
   website: "www.lempea.com"
   business-id: "2820752-1"
+  email-suffix: "@lempea.com"
 
 # Collections
 collections:

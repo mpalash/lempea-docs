@@ -1,0 +1,135 @@
+.bcard-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.bcard-wrapper {
+  transform: scale(1.5);
+}
+.bcard-layout,
+.bcard-layout-reverse {
+  margin: $s-b;
+  width: 420px;
+  height: 275px;
+  display: block;
+  background: $color-white;
+  box-shadow: $box-shadow-doc;
+
+  width: 84mm;
+  height: 55mm;
+}
+.bcard-layout {
+  position: relative;
+  padding: $s-m;
+  padding: $p-l;
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .bcard-circle-logo {
+    position: absolute;
+    top: 3*$s-m;
+    left: $s-m;
+    width: $s-l;
+
+    top: 3.5*$p-xl;
+    left: $p-l;
+    width: $p-xxl;
+  }
+  .bcard-title {
+    position: absolute;
+    top: 6*$s-m;
+    left: $s-m;
+
+    top: 6*$p-xl;
+    left: $p-l;
+
+    font-family: $font-rc;
+    font-weight: normal;
+    font-size: 4.8mm;
+    span:nth-child(2n){
+      color: $color-red;
+    }
+  }
+  .bcard-designation {
+    position: absolute;
+    top: 7*$s-m;
+    left: $s-m;
+
+    top: 7*$p-xl;
+    left: $p-l;
+
+    font-family: $font-r;
+    font-weight: bold;
+    font-size: 2.4mm;
+    letter-spacing: 0.05em;
+    color: $color-red;
+  }
+  .bcard-phone {
+    position: absolute;
+    top: 8*$s-m;
+    left: $s-m;
+
+    top: 8*$p-xl;
+    left: $p-l;
+
+    font-family: $font-rm;
+    font-size: 3.6mm;
+    font-variant-numeric: tabular-nums;
+  }
+  .bcard-footer {
+    position: absolute;
+    bottom: $s-b ;
+    left: $s-m;
+
+    bottom: $p-m ;
+    left: $p-l;
+
+    font-size: 1.8mm;
+    color: $color-red;
+  }
+}
+.bcard-layout-reverse {
+  background: $gradient;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .bcard-logo {
+    height: 60px;
+    height: 12mm;
+  }
+}
+@media print {
+  @page {
+    size: 84mm 55mm landscape;
+    margin: 0;
+  }
+  .bcard-body {
+    display: unset;
+    padding: 0;
+    background-color: $color-white;
+    height: auto;
+    header {
+      display: none;
+    }
+  }
+  .bcard-wrapper {
+    transform: none;
+  }
+  .bcard-layout,
+  .bcard-layout-reverse {
+    box-shadow: none;
+    transform: none;
+    margin: 0;
+  }
+  .bcard-layout {
+    display: block;
+    page-break-after: always;
+  }
+  .bcard-layout-reverse {
+    display: flex;
+  }
+}

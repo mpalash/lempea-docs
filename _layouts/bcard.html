@@ -1,12 +1,42 @@
----
-layout: default
----
-<article class="bcard">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  </head>
 
-  <h1 class="bcard-title">{{ page.title | escape }}</h1>
+  <body class="bcard-body">
 
-  <div class="bcard-content">
-    {{ content }}
-  </div>
+    {%- include header.html -%}
 
-</article>
+    <div class="bcard-wrapper">
+      <article class="bcard-layout">
+        <img class="bcard-circle-logo" src="/assets/logo/logo-circle-gradient.svg" />
+        <h1 class="bcard-title">
+          <span>{{ page.title | escape }}</span><span>.</span><span>{{ page.surname | escape }}</span><span>{{ site.company.email-suffix }}</span>
+        </h1>
+        {% if page.designation %}
+        <div class="bcard-designation">
+          {{ page.designation | escape }}
+        </div>
+        {% endif %}
+        {% if page.phone %}
+        <div class="bcard-phone">
+          {{ page.phone | escape }}
+        </div>
+        {% endif %}
+        <div class="bcard-footer">
+          <b>{{ site.company.name }}</b>, {{ site.company.address }} • {{ site.company.website }}
+        </div>
+      </article>
+      <article class="bcard-layout-reverse">
+        <img class="bcard-logo" src="/assets/logo/logo-white.svg" />
+      </article>
+    </div>
+
+
+  </body>
+
+</html>

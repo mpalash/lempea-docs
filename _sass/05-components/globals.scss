@@ -1,0 +1,34 @@
+.wrapper {
+  @extend .container;
+}
+.page-content {
+  min-height: 100vh;
+}
+
+.site-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: $font-rc;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: $s-xl;
+  text-decoration: none;
+  color: $color-ink;
+
+  width: 2.25*$s-xxxl;
+  height: $s-xxl;
+  padding: $s-s $s-s $s-s 1.25*$s-xxl;
+  background: transparent url(/assets/logo/logo-circle-gradient.svg) no-repeat 8px 8px / 48px 48px;
+
+  transform-origin: top left;
+  transform: rotate(-90deg) translateX(-2.25*$s-xxxl);
+}
+
+footer {
+  .wrapper {
+    padding: $s-s 0;
+    font-size: 0.8rem;
+    border-top: 1px solid $color-grey;
+  }
+}

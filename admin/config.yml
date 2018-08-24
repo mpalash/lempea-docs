@@ -27,6 +27,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Layout", name: "layout", widget: "hidden", default: "bcard"}
       - {label: "Name", name: "title", widget: "string", required: true}
+      - {label: "Surname", name: "surname", widget: "string", required: true}
       - {label: "Designation", name: "designation", widget: "string", required: false}
       - {label: "Phone Number", name: "phone", widget: "string", required: false}
     meta: # Meta data fields. Just like fields, but without any preview element
