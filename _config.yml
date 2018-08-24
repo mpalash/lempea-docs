@@ -20,6 +20,12 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+company:
+  name: "Lempea Oy"
+  address: "c/o Spaces, Mannerheiminaukio 1 A, 00100 Helsinki, Finland"
+  website: "www.lempea.com"
+  business-id: "2820752-1"
+
 # Collections
 collections:
   bcard:
