@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-circle-gradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="22.0531965%" y1="70.6493949%" x2="64.6103593%" y2="39.2193625%" id="linearGradient-1">
+            <stop stop-color="#C1272D" offset="0%"></stop>
+            <stop stop-color="#EF492E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lockups" transform="translate(-46.000000, -395.000000)">
+            <g id="logo-circle-gradient" transform="translate(46.000000, 395.000000)">
+                <rect id="Rectangle-2-Copy-2" fill="url(#linearGradient-1)" x="0" y="0" width="84" height="84" rx="42"></rect>
+                <path d="M30.7932813,49.7563281 L55.8050781,49.7563281 L60.8232813,67.0016406 L39.9491406,67.0016406 C38.5366218,66.9906125 37.2419685,66.2119527 36.5701563,64.969375 L28.1760156,49.125625 C28.9971425,49.5097387 29.8873211,49.7242521 30.7932813,49.7563281 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <path d="M22.1767187,32.5414844 L22.1767187,16.1919531 L39.4159375,21.2101563 L39.4159375,48.6929688 L30.799375,48.6929688 C29.0477119,48.6772816 27.4439566,47.7077864 26.6160156,46.1640625 L24.6294531,42.4225 C23.0245158,39.3757657 22.1828572,35.9850836 22.1767188,32.5414844 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
