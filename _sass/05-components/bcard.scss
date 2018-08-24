@@ -107,11 +107,16 @@
     size: 84mm 55mm landscape;
     margin: 0;
   }
+  .bcard-html,
+  .bcard-body {
+    width: 84mm;
+    height: 55mm;
+    margin: 0;
+  }
   .bcard-body {
     display: unset;
     padding: 0;
     background-color: $color-white;
-    height: auto;
     header {
       display: none;
     }
