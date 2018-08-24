@@ -2,28 +2,28 @@
 layout: default
 ---
 
-<h2>Docs</h2>
+<h2 class="collection-name">Docs</h2>
 <ul>
   {% for page in site.doc reversed %}
-  <li>
+  <li class="item-doc">
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
   </li>
   {% endfor %}
 </ul>
 
-<h2>CVs</h2>
+<h2 class="collection-name">CVs</h2>
 <ul>
   {% for page in site.cv reversed %}
-  <li>
+  <li class="item-cv">
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
   </li>
   {% endfor %}
 </ul>
 
-<h2>Business Cards</h2>
+<h2 class="collection-name">Business Cards</h2>
 <ul>
   {% for page in site.bcard reversed %}
-  <li>
+  <li class="item-bcard">
     <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
   </li>
   {% endfor %}

@@ -23,7 +23,7 @@ $line-height-base: 1.33em;
 
 // SIZES
 // Use these to specify fixed size elements
-$container-max-width: 1200px;
+$container-max-width: 1024px;
 $responsive-medium:   1024px;
 $responsive-small:    640px;
 
@@ -36,6 +36,7 @@ $bleed: 20mm;
 
 // SPACING
 // Use these variables for padding & margin
+$s-xxxl:128px;
 $s-xxl: 64px;
 $s-xl:  48px;
 $s-l:   32px;

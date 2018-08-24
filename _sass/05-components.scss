@@ -1,3 +1,45 @@
 // Components root folder: 05-components/
 
 @import "05-components/01-grid";
+
+@mixin rc-small-caps {
+  font-family: $font-rc;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.wrapper {
+  @extend .container;
+}
+.site-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: $font-rc;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 0.9;
+  text-decoration: none;
+  color: $color-ink;
+
+  width: $s-xxxl;
+  padding: 1.25*$s-xxl $s-s $s-s $s-s;
+  background: transparent url(/assets/logo/logo-circle-gradient.svg) no-repeat 8px 8px / 48px 48px;
+}
+.page-content {
+  min-height: 100vh;
+}
+.collection-name {
+  @include rc-small-caps;
+  padding: $s-s 0;
+  font-size: 1rem;
+  border-bottom: 1px solid $color-grey;
+}
+footer {
+  .wrapper {
+    padding: $s-s 0;
+    font-size: 0.8rem;
+    border-top: 1px solid $color-grey;
+  }
+}

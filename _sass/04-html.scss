@@ -12,12 +12,12 @@ body {
   }
 }
 body {
-  padding: $s-l;
-  font-family: $font-ws;
+  font-family: $font-r;
   line-height: $line-height-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-grey-light;
+  color: $color-ink;
 }
 h1, h2, h3, h4, h5, h6 {
 }
