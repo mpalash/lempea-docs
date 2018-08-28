@@ -1,0 +1,99 @@
+.doc-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.doc-wrapper {
+  padding: $s-xxxl $s-b;
+  // transform: scale(1.5);
+}
+.doc-layout {
+  display: block;
+  background: $color-white;
+  box-shadow: $box-shadow-doc;
+
+  width: 210mm;
+  min-height: 297mm;
+  height: auto;
+
+  position: relative;
+  padding: $s-m;
+  padding: 20mm;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .doc-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $color-red;
+  }
+  .doc-logo {
+    flex: 1 0 auto;
+    margin: 0;
+    img {
+      display: block;
+      height: 10mm;
+      margin: 4mm;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+  .doc-company-details {
+    max-width: 55mm;
+    padding: 0 4mm;
+    p {
+      font-size: 8pt;
+      line-height: 1.5;
+    }
+  }
+  .doc-content {
+    margin: 10mm 0;
+    p {
+      margin-bottom: 1em;
+      font-size: 11pt;
+    }
+  }
+  .doc-footer {
+    position: absolute;
+    bottom: $s-b ;
+    left: $s-m;
+
+    bottom: $p-m ;
+    left: $p-l;
+
+    font-size: 1.8mm;
+    color: $color-red;
+  }
+}
+
+@media print {
+  .doc-html,
+  .doc-body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+  }
+  .doc-body {
+    display: unset;
+    padding: 0;
+    background-color: $color-white;
+    header {
+      display: none;
+    }
+  }
+  .doc-wrapper {
+    transform: none;
+    padding: 0;
+  }
+  .doc-layout {
+    display: block;
+    box-shadow: none;
+    transform: none;
+    margin: 0;
+  }
+}

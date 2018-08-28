@@ -23,6 +23,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 company:
   name: "Lempea Oy"
   address: "c/o Spaces, Mannerheiminaukio 1 A, 00100 Helsinki, Finland"
+  address-multiline: >-
+    c/o Spaces, Mannerheiminaukio 1 A
+    00100 Helsinki, Finland
   website: "www.lempea.com"
   business-id: "2820752-1"
   email-suffix: "@lempea.com"

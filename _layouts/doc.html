@@ -1,12 +1,34 @@
----
-layout: default
----
-<article class="doc">
+<!DOCTYPE html>
+<html class="doc-html" lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <h1 class="doc-title">{{ page.title | escape }}</h1>
+  {%- include head.html -%}
 
-  <div class="doc-content">
-    {{ content }}
-  </div>
+  <body class="doc-body">
 
-</article>
+    {%- include header.html -%}
+
+    <div class="doc-wrapper">
+      <article class="doc-layout page">
+        <div class="doc-header">
+          <div class="doc-logo">
+            <img src="/assets/logo/logo-gradient.svg" />
+          </div>
+          <div class="doc-company-details">
+            <p>{{ site.company.name }}<br>
+            {{ site.company.address-multiline }}</p>
+          </div>
+          <div class="doc-company-details">
+            <p>{{ site.company.website }}<br><br>Business ID {{ site.company.business-id }}</p>
+          </div>
+        </div>
+        <div class="doc-content">
+          {{ page.content }}
+        </div>
+        <div class="doc-footer">
+
+        </div>
+      </article>
+    </div>
+  </body>
+
+</html>
